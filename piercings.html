@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Piercings</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+
+<style >
+    .mySlides{display: none}
+
+
+
+</style>
+
+
+
+
+<body style="background-color: black">
+
+<h2 class="w3-center" style="color: red">piercings Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+    <img class="mySlides" src="resources/tongue.jpeg" style="width:100%" height="500">
+    <img class="mySlides" src="resources/lip1.jpeg" style="width:100%" height="500">
+    <img class="mySlides" src="resources/faced%20out.jpeg" style="width:100%" height="500">
+    <img class="mySlides" src="resources/body%20tat.jpeg" style="width:100%"height="500" >
+    <img class="mySlides" src="resources/eye%20pierce.jpeg" style="width:100%" height="500">
+    <img class="mySlides" src="resources/tongue4.jpeg" style="width:100%" height="500" >
+    <img class="mySlides" src="resources/ear2.jpeg" style="width:100%" height="500">
+    <img class="mySlides" src="resources/ear.jpeg" style="width:100%" height="500" >
+    <img class="mySlides" src="resources/piercings.jpeg" style="width: 100%" height="500" >
+    <img class="mySlides" src="resources/face2.jpeg" style="width:100%"height="500">
+    <img class="mySlides" src="resources/face.jpeg" style="width:100%" height="500" >
+    <img class="mySlides" src="resources/tongue%20piercing.jpeg" style="width:100%" height="500" >
+    <img class="mySlides" src="resources/tongue3.jpeg" style="width:100%" height="500" >
+    <img class="mySlides" src="resources/two.jpeg" style="width:100%"height="500" >
+    <img class="mySlides" src="resources/example8.jpeg" style="width:100%" height="500" >
+
+
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+</script>
+
+
+
+
+</body>
+</html>
